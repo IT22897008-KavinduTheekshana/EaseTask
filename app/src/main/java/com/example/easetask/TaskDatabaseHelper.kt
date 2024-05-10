@@ -1,5 +1,6 @@
 package com.example.easetask
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -29,4 +30,16 @@ class TaskDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         db.execSQL(DROP_TABLE_QUERY)
         onCreate(db)
     }
+
+    fun insertTask(task: Task){
+        val db = writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_TITLE, task.title)
+            put(COLUMN_CONTENT, task.content)
+        }
+        db.insert(TABLE_NAME, null,values)
+        db.close()
+    }
+
+
 }
