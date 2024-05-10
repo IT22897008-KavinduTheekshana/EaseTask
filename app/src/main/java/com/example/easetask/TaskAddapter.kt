@@ -30,7 +30,7 @@ class TaskAdapter(private var tasks: List<Task>, context: Context) : RecyclerVie
         holder.contentTextView.text = task.content
 
         holder.updateButton.setOnClickListener{
-            val intent = Intent(holder.itemView.context, UpdateActivity::class.java).apply {
+            val intent = Intent(holder.itemView.context, UpdateTaskActivity::class.java).apply {
                 putExtra("task_id", task.id)
             }
             holder.itemView.context.startActivity(intent)

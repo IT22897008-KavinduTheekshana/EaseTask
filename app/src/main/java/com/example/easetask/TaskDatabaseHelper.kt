@@ -73,5 +73,19 @@ class TaskDatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_
         db.close()
     }
 
+    fun getTaskByID(taskId: Int ): Task{
+        val db = readableDatabase
+        val query = "SELECT * FROM $TABLE_NAME $COLUMN_ID = $taskId"
+        val cursor = db.rawQuery(query,null)
+
+        val id = cursor.getInt((cursor.getColumnIndexOrThrow(COLUMN_ID)))
+        val title = cursor.getString((cursor.getColumnIndexOrThrow(COLUMN_TITLE)))
+        val content = cursor.getString((cursor.getColumnIndexOrThrow(COLUMN_CONTENT)))
+
+        cursor.close()
+        db.close()
+        return Task(id, title, content)
+    }
+
 
 }
