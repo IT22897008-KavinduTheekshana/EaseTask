@@ -39,17 +39,20 @@
         android:layout_marginTop="16dp"
         android:maxLines="1"
         android:fontFamily="@font/poppins"/>
+
     <EditText
-        android:id="@+id/contentEditText"
+        android:id="@+id/ContentText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Enter the description"
-        android:gravity="top"
-        android:padding="12dp"
-        android:textSize="18sp"
-        android:background="@drawable/blue_border"
         android:layout_below="@+id/titleEditText"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:hint="Enter the description"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/blue_border"
+        android:gravity="top"
+        android:padding="12dp"/>
+
 
 
 </RelativeLayout>
