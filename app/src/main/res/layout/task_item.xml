@@ -35,10 +35,19 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="30dp"
-                android:src="@drawable/baseline_edit_24"/>
+                android:layout_marginEnd="31dp"
+                android:src="@drawable/baseline_edit_24" />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toStartOf="@id/updateButton"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_delete_24"/>
 
         </RelativeLayout>
+
 
         <TextView
             android:id="@+id/contentTextVIew"
