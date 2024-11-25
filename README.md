@@ -1,25 +1,21 @@
-TaskEase: Efficient Task Management App
+# EaseTask
 
-TaskEase is a dynamic task management application developed as part of a lab assessment for the BSc (Hons) in Information Technology program at SLIIT. This Android app, built using Android Studio and Kotlin, allows users to seamlessly manage their tasks with features like adding, viewing, updating, and deleting tasks.
+## Features
+- **Task Management**: Allows users to create, update, and delete tasks efficiently.
+- **User Authentication**: Secure user registration and login functionality.
+- **Role-Based Access Control**: Differentiates between admin and regular users with specific permissions.
+- **Task Prioritization**: Enables users to assign priorities to tasks for better organization.
+- **Responsive Design**: Provides an optimized experience across all devices, including mobile and desktop.
+- **Real-Time Updates**: Reflects task changes immediately on the user interface.
 
-Key Features:
+## Technologies Used
+- **Programming Language**: Python
+- **Web Framework**: Flask
+- **Frontend Tools**: HTML, CSS, JavaScript, Bootstrap
+- **Database**: SQLite
+- **Deployment**: Heroku
 
-•	Intuitive user interface designed for efficient task management.
-•	Integration of SQLite database using Room library for local storage of task data.
-•	Utilization of Kotlin Coroutines for asynchronous database operations, ensuring responsiveness.
-•	Implementation of ViewModel architecture to separate UI-related data and business logic.
-•	User-friendly interactions for adding, updating, and deleting tasks.
-•	Additional enhancements like search functionality and task categorization for improved usability.
-
-
-How to Use:
-
-•	Clone or download the repository.
-•	Open the project in Android Studio.
-•	Run the app on an emulator or physical device.
-•	Explore the various functionalities for task management.
-•	Provide feedback and suggestions for further enhancements.
-
-
-Contributing:
-Contributions to this project are welcome! If you have ideas for new features, improvements, or bug fixes, feel free to submit pull requests or open issues.
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/IT22897008-KavinduTheekshana/EaseTask.git
